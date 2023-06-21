@@ -1,5 +1,6 @@
 class registerAutomationPage{
 
+//Web Elements:-
 elements={
 signUpLink:()=>cy.contains(' Signup / Login'),
 name:()=>cy.get('[data-qa="signup-name"]'),
@@ -25,6 +26,7 @@ fillMobile:()=>cy.get('[data-qa="mobile_number"]'),
 createAccount:()=>cy.get('[data-qa="create-account"]'),
 continueBtn:()=>cy.get('[data-qa="continue-button"]')
 }
+//Common methods:-
 fillTheForm(fill_name,fill_password,first_name,last_name,company_name,address,country,state,city,zip_code,mobile_no){
 this.elements.titleOfName().click();
 this.elements.fillName().type(fill_name);
